@@ -1,7 +1,7 @@
 /**
  * Array of strings with posibles faces
  */
-const faces = ["dice/img/1.png","/dice/img/2.png","/dice/img/3.png","/dice/img/4.png","/dice/img/5.png","/dice/img/6.png"]
+const faces = ["img/1.png","img/2.png","img/3.png","img/4.png","img/5.png","img/6.png"]
 
 /**
  * 
