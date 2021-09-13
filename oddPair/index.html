@@ -18,14 +18,21 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <script src="/oddPair.js"></script>
+    <style type="text/css">
+        body {
+            background: #888888;
+        }
+    </style>
+
 
 </head>
 
 <body>
-    <input id="num" type="text" placeholder="Type number which you want check!">
-    <button onclick="check(document.getElementById('num').value)" value="menu">Press for check</button>
-    <ul class="list-group">
-    </ul>
+    <div class="mx-auto p-3 mb-2 bg-secondary text-white" style="width: 400px;">
+        <input id="num" type="text" placeholder="Type a number!">
+        <button type="button" class="btn btn-success" onclick="check(document.getElementById('num').value)">Press for
+            check</button>
+    </div>
 </body>
 
 </html>
