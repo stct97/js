@@ -46,11 +46,22 @@ function oddPair(){
     } else return alert("odd")
 }
 /**
- * This function check if input number by user is div between 5 and 11
+ * This function check if input number by user is div between 5 and 11. Doesn´t receive parametres
  */
 function checkDiv(){
     x = window.prompt("Input a number");
     if (parseInt(x)%parseInt(11) === 0  && parseInt(x)%parseInt(5) === 0){
         console.log("true")
     } else console.log("false")
+}
+/**
+ * This function dosen´t receive parametres and show 2 prompt
+ * @returns result of which number is the highest
+ */
+function checkWhichNumberIsHighest(){
+    x = window.prompt("Input a number");
+    y = window.prompt("Input a number");
+    if(x>y){
+        return alert("First input is the highest")
+    } else alert("Second input is the highest")
 }
