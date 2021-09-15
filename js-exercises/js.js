@@ -45,3 +45,12 @@ function oddPair(){
         return alert("pair")
     } else return alert("odd")
 }
+/**
+ * This function check if input number by user is div between 5 and 11
+ */
+function checkDiv(){
+    x = window.prompt("Input a number");
+    if (parseInt(x)%parseInt(11) === 0  && parseInt(x)%parseInt(5) === 0){
+        console.log("true")
+    } else console.log("false")
+}
