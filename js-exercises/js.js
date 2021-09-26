@@ -74,8 +74,8 @@ function checkWhichNumberIsHighestTernaryOperator() {
 }
 
 /**
- * 
- * @returns 
+ * This function check which is the first character of a string
+ * @returns leter or number by alert
  */
 function checkLetterOrNumber() {
     var numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
@@ -88,5 +88,17 @@ function checkLetterOrNumber() {
         } else r = "leter"
     }
     return alert(r);
+}
+/**
+ * This function check that sides of triangle will be 180 degres
+ * @returns alert with 2 options: valir or not valid
+ */
+function checkTriangle(){
+    var x = window.prompt("Input a side");
+    var y = window.prompt("Input a side");
+    var z = window.prompt("Input a side");
+    if (parseFloat(x) + parseFloat(y) + parseFloat(z) == 180){
+        return alert("Valid!")
+    } else return alert("Not valid!")
 }
 
