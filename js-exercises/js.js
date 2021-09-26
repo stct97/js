@@ -55,7 +55,7 @@ function checkDiv() {
     } else console.log("false")
 }
 /**
- * This function dosen´t receive parametres and show 2 prompt
+ * This function dosen´t receive parametres and show 2 prompt. Doesn´t receive parametres
  * @returns result of which number is the highest
  */
 function checkWhichNumberIsHighest() {
@@ -66,7 +66,7 @@ function checkWhichNumberIsHighest() {
     } else alert("Second input is the highest")
 }
 /**
- * Same that last function but using a ternary operator
+ * Same that last function but using a ternary operator. Doesn´t receive parametres
  * @returns same result
  */
 function checkWhichNumberIsHighestTernaryOperator() {
@@ -74,7 +74,7 @@ function checkWhichNumberIsHighestTernaryOperator() {
 }
 
 /**
- * This function check which is the first character of a string
+ * This function check which is the first character of a string. Doesn´t receive parametres
  * @returns leter or number by alert
  */
 function checkLetterOrNumber() {
@@ -90,7 +90,7 @@ function checkLetterOrNumber() {
     return alert(r);
 }
 /**
- * This function check that sides of triangle will be 180 degres
+ * This function check that sides of triangle will be 180 degres. Doesn´t receive parametres
  * @returns alert with 2 options: valir or not valid
  */
 function checkTriangle() {
@@ -101,11 +101,25 @@ function checkTriangle() {
         return alert("Valid!")
     } else return alert("Not valid!")
 }
-
+/**
+ * Check if first char of word is capital or not. Doesn´t receive parametres
+ * @returns an alert with 2 options
+ */
 function checkCapitalize() {
     var x = window.prompt("Input a string");
-    if(x.charAt(0) === x.charAt(0).toUpperCase()){
+    if (x.charAt(0) === x.charAt(0).toUpperCase()) {
         return alert("First char capital!")
     } else return alert("Non capital first char!")
+}
+
+/**
+ * Little game that generate a number and the user have to try to know. Doesn´t receive parametres
+ * @returns an alert with 2 posibilities
+ */
+function aleatoryNumber() {
+    var x = window.prompt("Input a number!");
+    if (parseFloat(x) === Math.floor((Math.random() * (10 - 0 + 1)) + 0)) {
+        return alert("Yo win!")
+    } else return alert("You lost!")
 }
 
