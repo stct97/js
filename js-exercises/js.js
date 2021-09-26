@@ -12,7 +12,7 @@ function sum() {
  * This function convar celsius to farenheit. Doesn´t receive parametres
  * @returns ºFarenheit
  */
-function convarGrades() {
+function conGrades() {
     var celsius = window.prompt("Put grades celsius");
     var farenheit = parseInt(celsius) * parseInt(9) / parseInt(5) + parseFloat(32);
     return alert(celsius + "º grados celsius" + " is " + farenheit + "º Farenheit")
@@ -72,17 +72,22 @@ function checkWhichNumberIsHighest() {
 function checkWhichNumberIsHighestTernaryOperator() {
     return (x = window.prompt("Input a number")) > (y = window.prompt("Input a number")) ? alert("First input is the highest") : alert("Second input is the highest");
 }
+
 /**
+ * 
+ * @returns 
+ */
 function checkLetterOrNumber() {
-    var numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
-    var x = window.prompt("Input a whatever");
+    var numbers = [0, "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+    var x = document.getElementById('texto').value;
+    alert(x.charAt(0));
     var r;
     for (var i = 0; i < 9; i++){
-        if(numbers === x){
+        if(numbers == x.charAt(0)){
             r = "number";
             break;
         } else r = "leter"
     }
     return alert(r);
 }
-*/
+
