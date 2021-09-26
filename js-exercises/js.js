@@ -122,4 +122,52 @@ function aleatoryNumber() {
         return alert("Yo win!")
     } else return alert("You lost!")
 }
+/**
+ * Show a count. The limit is difined by user
+ */
+function useOfWhile1() {
+    var x = window.prompt("Input a number!");
+    var y = 0;
+    while (y <= parseInt(x)) {
+        console.log(y);
+        y++;
+    }
+}
+/**
+ * Show a count x2. The limit is difined by user
+ */
+function useOfWhile2() {
+    var x = window.prompt("Input a number!");
+    var y = 0;
+    while (y <= parseInt(x)) {
+        console.log(y);
+        y += 2;
+    }
+}
+
+/**
+ * Show a count. The limit is difined by user
+ */
+ function useOfWhile3() {
+    var x = window.prompt("Input a number!");
+    var y = 0;
+    while (y <= parseInt(x)) {
+        console.log(y);
+        y--;
+    }
+}
+
+/**
+ * Table of nine with while
+ */
+ function useOfWhile4() {
+    var y = 0;
+    var z = 9;
+    var operation;
+    while (y <= 10) {
+        operation = parseFloat(z) * parseFloat(y)
+        console.log(y + " x 9 = " + operation);
+        y++;
+    }
+}
 
