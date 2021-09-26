@@ -78,12 +78,11 @@ function checkWhichNumberIsHighestTernaryOperator() {
  * @returns 
  */
 function checkLetterOrNumber() {
-    var numbers = [0, "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+    var numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
     var x = document.getElementById('texto').value;
-    alert(x.charAt(0));
     var r;
     for (var i = 0; i < 9; i++){
-        if(numbers == x.charAt(0)){
+        if(numbers[i] === x.charAt(0)){
             r = "number";
             break;
         } else r = "leter"
