@@ -148,7 +148,7 @@ function useOfWhile2() {
 /**
  * Show a count. The limit is difined by user
  */
- function useOfWhile3() {
+function useOfWhile3() {
     var x = window.prompt("Input a number!");
     var y = 0;
     while (y <= parseInt(x)) {
@@ -160,7 +160,7 @@ function useOfWhile2() {
 /**
  * Table of nine with while
  */
- function useOfWhile4() {
+function useOfWhile4() {
     var y = 0;
     var z = 9;
     var operation;
@@ -170,4 +170,19 @@ function useOfWhile2() {
         y++;
     }
 }
+/*
+function checkNumber() {
+    var x = window.prompt("Input a number!");
+    var y = ["0", 1, 2, 3, 4, 5, 6, 7, 8, 9];
+    var numbers = true;
 
+    for (var i = 0; i < x.length; i++) {
+        for (var j = 0; j < y.length; j++) {
+            if (x.charAt[i] != y[j]) {
+                numbers = false;
+            }
+        }
+    }
+    console.log(numbers)
+}
+*/
