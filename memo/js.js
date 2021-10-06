@@ -4,8 +4,8 @@ var three = "three";
 var four = "four";
 var countX = 0;
 var countY = 0;
-var cont = 5;
-
+var cont = 100;
+var src = [ "/img/linux.png", "/img/linux.png", "/img/win.png", "/img/win.png"]
 /**
  * 
  * @param {*} image 
@@ -61,4 +61,8 @@ function contador(){
     cont--;
 }
 
-setInterval('contador()',1000);
+function start(){
+    setInterval('contador()',1000);
+}
+
+
