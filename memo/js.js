@@ -4,6 +4,7 @@ var three = "three";
 var four = "four";
 var countX = 0;
 var countY = 0;
+var cont = 5;
 function change(image) {
     console.log(1);
     /*if (document.getElementById("1").value == "1") {
@@ -40,8 +41,23 @@ function checkWin() {
     if (one === four && countX === 0) {
         countX++;
         alert("You win");
-    } else if (two == three && countY === 0) {
+    } else if (two === three && countY === 0) {
         countY++;
         alert("You win");
     }
+    
 }
+
+function contador(){
+	var contador = document.getElementById("contador");
+	contador.value = cont;
+    if(cont == -1){
+        setTimeout(function () {
+            window.location.reload(1);
+        }, 1000);
+        alert("You lost!")
+    }
+    cont--;
+}
+
+setInterval('contador()',1000);
