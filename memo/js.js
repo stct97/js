@@ -4,12 +4,12 @@ var three = "three";
 var four = "four";
 var countX = 0;
 var countY = 0;
-var cont = 100;
-var src = [ "/img/linux.png", "/img/linux.png", "/img/win.png", "/img/win.png"]
-/**
- * 
- * @param {*} image 
- */
+var cont = 5;
+var src = ["/img/linux.png", "/img/linux.png", "/img/win.png", "/img/win.png"]
+    /**
+     * 
+     * @param {*} image 
+     */
 function change(image) {
     switch (image.id) {
         case "1":
@@ -43,17 +43,17 @@ function checkWin() {
         countY++;
         alert("You win");
     }
-    
+
 }
 
 /**
  * 
  */
-function contador(){
-	var contador = document.getElementById("contador");
-	contador.value = cont;
-    if(cont == -1){
-        setTimeout(function () {
+function contador() {
+    var contador = document.getElementById("contador");
+    contador.value = cont;
+    if (cont == -1) {
+        setTimeout(function() {
             window.location.reload(1);
         }, 1000);
         alert("You lost!")
@@ -61,8 +61,6 @@ function contador(){
     cont--;
 }
 
-function start(){
-    setInterval('contador()',1000);
+function start() {
+    setInterval('contador()', 1000);
 }
-
-
